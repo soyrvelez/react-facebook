@@ -1,10 +1,10 @@
 import styles from '../styles/Inbox.module.css';
 
-export default function Message({ username, message, image }) {
+export default function Post({ username, content, image }) {
     return (
         <div className={styles.card}>
             <h3>{username}</h3>
-            <h4>{message}</h4>
+            <h5>{content}</h5>
         </div>
     )
 }
