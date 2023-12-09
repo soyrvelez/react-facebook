@@ -1,0 +1,176 @@
+.mainContainer {
+  background-color: white;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  margin: 10px;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+}
+
+.sideBar {
+  display: flex;
+  flex-shrink: 0.4;
+  flex-direction: column;
+  background-color: white;
+  justify-content: flex-start;
+  padding: 0 20px;
+}
+
+.gameFeed {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1.6;
+  justify-content: flex-start;
+}
+
+
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 3.6rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.navCenter {
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  justify-content: center;
+}
+.navSections {
+  width: 133%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.gameStrip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.gameCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 10px;
+  min-height: 300px;
+  min-width: 225px;
+  background-size: cover;
+  background-position: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition:
+      color 0.15s ease,
+      border-color 0.15s ease;
+}
+
+.gameCard:hover,
+.gameCard:focus,
+.gameCard:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.gameCard h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.gameCard p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.sideBarTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sideBarSearch input {
+  width: 100%;
+}
+
+.sidebarPlay {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBarSaved {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gameCategory {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .grid {
+      width: 100%;
+      flex-direction: column;
+  }
+}
