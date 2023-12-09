@@ -1,17 +1,19 @@
 import Game from "./game";
-
+import styles from '../../styles/Games.module.css'
 // data
 
 
 export default function Carousel({ title, games }) {
-  const displayGameArray = games.map((game, idx) => {
-    return <Game name={game.name} playerCount={game.playerCount} imageUrl={game.imageUrl} key={idx} />
-  });
+    const displayGameArray = games.map((game, idx) => {
+        return <Game name={game.name} playerCount={game.playerCount} imageUrl={game.imageUrl} key={idx} />
+    });
 
-  return (
-    <div>
-      <h3>{title}</h3>
-      {displayGameArray}
-    </div>
-  )
+    return (
+        <div className={styles.carousel}>
+            <h3>{title}</h3>
+            <div className={styles.gameStrip}>
+                {displayGameArray}
+            </div>
+        </div>
+    )
 }
